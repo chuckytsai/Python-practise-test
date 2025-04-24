@@ -1,6 +1,9 @@
 # Write a function called "table9to9" that prints out the multiplication table:
 def table9to9():
-    pass
+    for main in range(1, 10):
+        for send in range(1, 10):
+            print(f"{main} * {send} = {main * send}")
+    
 
 table9to9();
 # 1 x 1 = 1
