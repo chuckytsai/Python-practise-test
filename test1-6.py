@@ -1,8 +1,9 @@
 # Write a function called "findAllSmall" that takes one list of integers and another integer as input, 
 # and returns an list of integers that contains all elements that are smaller than the input integer.
 
-def findAllSmall():
-    pass
+def findAllSmall(args, nums):
+    print([item for item in args if item < nums])
+    return [item for item in args if item < nums]
 
 findAllSmall([1, 2, 3], 10); # returns [1, 2, 3]
 findAllSmall([1, 2, 3], 2); # returns [1]
