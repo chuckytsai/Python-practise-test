@@ -1,9 +1,16 @@
-# Write a function called "palindrome" that checks if the input string is a palindrome. 
+# Write a function called "palindrome" that checks if the input string is a palindrome.
 # (Search on google if you don't know what a palindrome is.)
 
-def palindrome():
-    pass
+def palindrome(text):
+    result = "true"
+    for i, item in enumerate(text):
+        if (text[i] != text[len(text) - 1 - i]):
+            result = "false"
 
-palindrome("bearaeb"); # true
-palindrome("Whatever revetahW"); # true
-palindrome("Aloha, how are you today?"); # false
+    print(result)
+    return True
+
+
+palindrome("bearaeb")  # true
+palindrome("Whatever revetahW")  # true
+palindrome("Aloha, how are you today?")  # false
